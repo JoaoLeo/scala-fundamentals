@@ -23,12 +23,30 @@ object Expressions {
     localValue + 99
   }
 
+  // indentation syntax for code blocks
+  val codeBlock2 =
+    // local values
+    val localValue = 78
+
+    // last value = value of entire block
+    localValue + 99
+
+  // pattern matching - switch on steroids
+  val value = 42
+  var description: String = value match {
+    case 1 => "first"
+    case 2 => "second"
+    case 42 => "meaning of life"
+    case _ => "default"
+  }
+
   def main(args: Array[String]): Unit = {
     println(meaningOfLife)
     println(mathExpresison)
     println(equalityTest)
     println(anIfExprss)
     println(codeBlock)
+    println(description)
   }
 
 }
