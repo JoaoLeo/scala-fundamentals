@@ -2,7 +2,7 @@ package io.joaoleo.playground.basics
 
 object Expressions {
   // structures thats evalutate to a value
-
+  // everything in scala is an expression=
   // math expression
   val meaningOfLife = 40 + 2
   val mathExpresison = 2 + 3 * 4
